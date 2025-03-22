@@ -1,0 +1,61 @@
+
+:root{
+    --fonte-principal: 'Prompt', sans-serif;
+    --text-color: #e1e1e1;
+    --cor-primaria: #81FE88;
+    --cor-secundaria: #888888;
+    --tag-color: #171D1F;
+    --itens-background: #171d1f;
+    --background-color: #1E1E1E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: var(--fonte-principal);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--itens-background);
+    padding: 20px;
+    height: 100vh;
+    width: 177px;
+    height: 100vh;
+}
+
+.container-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+}
+
+.container-list a{
+    
+    list-style: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.destaque{
+    color: var(--cor-primaria);
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+

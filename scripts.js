@@ -143,11 +143,13 @@ botaoPublicar.addEventListener("click", async (evento) => {
     try {
         botaoPublicar.disabled = true; // Evita múltiplos cliques
         botaoPublicar.textContent = "Publicando...";
-
+        
         // Simula a publicação do projeto
         const resultado = await publicarProjeto(nomeDoProjeto, descricaoDoProjeto, tagsProjeto);
         
         console.log("Projeto publicado com sucesso!", resultado);
+        botaoPublicar.disabled = false; // Reabilita o botão
+        botaoPublicar.textContent = "Publicar";
         alert("Projeto publicado com sucesso!");
     } catch (error) {
         console.error("Erro ao publicar o projeto:", error);

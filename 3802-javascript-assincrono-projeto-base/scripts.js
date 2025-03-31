@@ -155,3 +155,31 @@ botaoPublicar.addEventListener("click", async (evento) => {
     }
 });
 
+// Obtém referência ao botão de descartar
+const botaoDescartar = document.querySelector(".botao-descartar");
+
+// Adiciona evento de clique ao botão de descartar
+botaoDescartar.addEventListener("click", (evento) => {
+    evento.preventDefault();
+
+    botaoDescartar.textContent = "Descartando...";
+    botaoDescartar.disabled = true;
+
+    setTimeout(() => {
+        const formulario = document.querySelector("form");
+
+        formulario.reset();
+
+        imagemPrincipal.src = "./img/imagem1.png";
+        nomeDaImagem.textContent = "image_projeto.png";
+
+        listaTags.innerHTML = "";
+
+        botaoDescartar.textContent = "Descartar";
+        botaoDescartar.disabled = false;
+    }, 3000); // Simulando um tempo de resposta do servidor
+
+    console.log("Projeto descartado.");
+});
+
+

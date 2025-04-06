@@ -179,6 +179,7 @@ botaoDescartar.addEventListener("click", (evento) => {
 
         botaoDescartar.textContent = "Descartar";
         botaoDescartar.disabled = false;
+        alert("Projeto descartado com sucesso!");
     }, 3000); // Simulando um tempo de resposta do servidor
 
     console.log("Projeto descartado.");

@@ -1,7 +1,3 @@
-Perfeito! Com base na estrutura do projeto que você mostrou (e considerando que a imagem foi renomeada automaticamente pelo WhatsApp), aqui está a versão final e ajustada do `README.md`:
-
----
-
 
 # 📸 CodeConnect - Plataforma de Postagens com JavaScript Assíncrono
 
